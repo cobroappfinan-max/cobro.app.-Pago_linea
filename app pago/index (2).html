@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Estado de Préstamo</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f3f5f9;
+        margin: 0;
+    }
+
+    .header {
+        background: linear-gradient(90deg, #87ec03, #daad1a);
+        color: white;
+        padding: 20px;
+    }
+
+    .warning {
+        font-size: 13px;
+        margin-top: 10px;
+        color: #ffdede;
+    }
+
+    .codigo {
+        background: #d9dee8;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .card {
+        background: #eee6df;
+        margin: 20px;
+        padding: 25px;
+        border-radius: 10px;
+    }
+
+    .atraso {
+        color: orange;
+        font-weight: bold;
+    }
+
+    .monto {
+        font-size: 28px;
+        margin: 15px 0;
+    }
+
+    .fecha {
+        float: right;
+        font-size: 18px;
+    }
+
+    .mensaje {
+        color: #ff6a00;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .boton {
+        display: block;
+        width: calc(100% - 40px);
+        margin: 20px;
+        padding: 15px;
+        background: #ffbb00;
+        color: white;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h2>CreditoVeloz</h2>
+    <p>+54 292****225</p>
+    <div class="warning">
+        Advertencia: Al realizar el pago, confirma que los datos sean correctos.
+    </div>
+</div>
+
+<div class="codigo">
+    Código de pedido: 7439981174388163585
+</div>
+
+<div class="card">
+    <div class="fecha">19-03-2026</div>
+
+    <div class="atraso">Atrasado 1 Días</div>
+
+    <div class="monto">$42,000</div>
+    <div>Monto del préstamo</div>
+
+    <div class="mensaje">
+        Su préstamo tiene 1 días vencidos, pague de inmediato.
+    </div>
+</div>
+
+<!-- BOTÓN FUNCIONAL -->
+<button class="boton" onclick="mensajeMantenimiento()">
+    Pagar ahora
+</button>
+
+<script>
+function mensajeMantenimiento() {
+    alert("LO SENTIMOS\nLa app está en mantenimiento.\nComuníquese con el área encargada de cobranza.");
+}
+</script>
+
+</body>
+</html>
